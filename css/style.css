@@ -1,0 +1,290 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* BODY */
+body{
+    background-color: black;
+}
+a:hover{
+    background-color: rgb(80, 0, 0);
+}
+
+/* HEADER */
+header{
+    background-color: rgb(126, 0, 0);
+    height: 80px;
+    padding-bottom: 20px;
+    margin: 5px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+.Logo{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+.navbar{
+    list-style: none;
+    display: flex;
+    width: 350px;
+    justify-content: space-evenly;
+    text-decoration: none;
+    text-transform: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.navbar li{
+   border-bottom: solid 1px black;
+}
+.navbar li a{
+    color: white;
+    flex-wrap: wrap;
+}
+
+/* MAIN */
+/* INDEX */
+.fondo{
+    opacity: 40%;
+    height: 850px;
+    overflow: hidden;
+    margin: 5px;
+}
+.fondo img{
+    height: 1200px;
+    overflow: hidden;
+}
+.titulo{
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 600px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+}
+#texto-principal{
+    color: white;
+    background-color: rgb(50, 0, 0);
+    margin: 5px;
+    padding: 30px;
+    height: 150px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: medium;
+    align-content: center;
+    text-align: center;
+}
+.fotos-principales{
+    background-color: none;
+    margin: 5px;
+    display: flex;
+    height: 800px;
+    overflow: hidden;
+    
+}
+.fotos-principales div{
+   margin: 2px;
+}
+.fotos-principales img{
+    width: 490px;
+    height: 800px;
+}
+#foto3{
+    width: 500px;
+}
+
+/* GALERÍA */
+h2{
+    background-color: rgb(25, 0, 0);
+    color: white;
+    padding: 30px;
+    height: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    align-content: center;
+    text-align: center;
+}
+.fotos-eventos{
+    display: grid;
+    grid-template-columns: 500px 500px 500px;
+    grid-template-rows: 250px;
+    height: 500px;
+    align-content: space-around;
+    justify-content: space-around;
+    align-items: center;
+}
+.fotos-eventos div{
+    width: 450px;
+    height: 220px;
+    overflow: hidden;
+    padding: 10px;
+}
+.fotos-eventos img{
+    width: 460px;
+    position: relative;
+    bottom: 70px;
+    padding: 5px;
+}
+#img1{
+    position: relative;
+    bottom: 300px;
+    right: 5px;
+}
+#img2{
+    position: relative;
+    bottom: 70px;
+}
+#img4{
+    position: relative;
+    bottom:40px;
+}
+#img5{
+    position: relative;
+    bottom: 300px;
+}
+#img6{
+    position: relative;
+    bottom: 310px;
+}
+/* FOOTER */
+.footer{
+    margin: 5px;
+    display: flex;
+    background-color: rgb(126, 0, 0);
+    height: 60px;
+    justify-content: space-between;
+    flex-direction: row;
+}
+
+#logo-footer{
+    height: 50px;
+    position: absolute;
+    margin-top: 5px;
+}
+.footer-nav{
+    display: flex;
+    width: 350px;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+#wsp{
+    height: 55px;
+}
+#ig{
+    height: 40px
+}
+#fb{
+    height: 40px;
+}
+
+
+/* MEDIA QUERIES*/
+/* HEADER */
+@media(max-width:500px){
+    .Logo{
+        height: 45px;
+        display: flex;
+        align-items: center;}
+}
+@media(max-width:500px){
+    header{
+        background-color: rgb(126, 0, 0);
+        height: 80px;
+        padding-bottom: 20px;
+        margin: 5px;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;}
+}
+
+/* INDEX */
+@media(max-width:500px){
+    .titulo{
+        color: white;
+        position: absolute;
+        top: 50%;
+        left: 20%;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        text-align: center; 
+    }
+}
+@media(max-width:500px){
+    #texto-principal{
+        color: white;
+        background-color: rgb(50, 0, 0);
+        margin: 5px;
+        padding: 30px;
+        height: 150px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: medium;
+        align-content: center;
+        text-align: center;
+    } 
+}
+@media(max-width:500px){
+    .fotos-principales{
+        background-color: none;
+        margin: 5px;
+        display: flex;
+        height: 800px;
+        overflow: scroll;
+    }
+}
+
+/* GALERÍA */
+@media (max-width:500px){
+    .fotos-eventos{
+        display: grid;
+        grid-template-columns:1fr;
+        align-content: space-around;
+        justify-content: space-around;
+        align-items: center;
+        overflow: scroll;
+        width: 500px;
+        height: 1830px;
+    }
+}
+@media(max-width:500px){
+    h2{
+        background-color: rgb(25, 0, 0);
+        color: white;
+        padding: 20px;
+        height: 40px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: xx-large;
+        align-content: center;
+        text-align: center;
+    }
+}
+@media(max-width:500px){
+    .fotos-eventos div{
+        width: 450px;
+        height: 220px;
+        overflow: hidden;
+        padding: 10px;
+    }
+}
+@media(max-width:500px){
+    .fotos-eventos img{
+    width: 490px;
+    position: relative;
+    bottom: 70px;
+    padding: 5px;
+    overflow: scroll;
+    }
+}
+/* FOOTER */
+@media(max-width:500px){
+    #logo-footer{
+        height: 40px;
+        position: absolute;
+        top: 2040px;
+    }
+}
