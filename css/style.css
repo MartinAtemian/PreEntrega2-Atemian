@@ -78,7 +78,7 @@ header{
     align-content: center;
     text-align: center;
 }
-.fotos-principales{
+/* .fotos-principales{
     background-color: none;
     margin: 5px;
     display: flex;
@@ -95,7 +95,7 @@ header{
 }
 #foto3{
     width: 500px;
-}
+} */
 
 /* GALERÍA */
 h2{
